@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', helvetica, sans-serif;  
+    /* border: red 2px solid;  */ 
+}
+
+html { font-size: 62.5%;
+}
+
+body {
+    
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+footer div.contact nav.lists ul a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+Button {
+    background-color:#F3603B ;
+    border-radius: 50px;
+    border:none;
+    padding: 10px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {    
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px;
+    color:#242E52;
+    font-weight: 500px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main section.description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+main section article img.grafics {
+    width: 100%;
+}
+
+.descriptionText {
+    max-width: 439px;    
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-weight: 700px;
+    
+}
+main section.description p {
+    padding-top: 30px;   
+    padding-bottom: 20px;
+}
+main section.centralMain article p {
+    font-size: 1.6rem;
+    font-weight: 500px; 
+    padding-top: 30px;   
+    padding-bottom: 20px;
+}
+
+.centralMain {
+    display: flex;
+    width: 100% ;
+    justify-content: space-evenly;    
+}
+.info {
+    max-width: 439px;
+}
+.containerTrack {
+    max-width: 580px;
+}
+
+h2 {
+    align-items: center;
+}
+
+.info h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.cardTrack div:first-child {
+    display: flex;
+}
+
+.number {
+    background-color: #F3603B !important;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 30px; 
+}
+
+.containerSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section.containerSlide div{
+    display: flex; 
+}
+
+main section.containerSlide div article {
+    max-width: 400px;
+    height: 219px;
+    margin: 100px 2.5px;
+    padding: 0 20px;
+    text-align: center; 
+    background-color: rgb(249, 249, 249);
+}
+main section.containerSlide div article img {
+    width: 20%;
+    position: relative;
+    bottom: 40px;
+}
+main section.containerSlide div article p {
+    padding: 20px 0 5px 0 ;
+    color: #B9B9C1;
+}
+
+main section.orange  div.container{
+    display: flex;
+    background-color: rgb(242, 95, 58);
+    padding: 30px;
+    justify-content: space-between;align-items: center;
+    
+}
+main section div p.lastText {
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: white;
+    width: 450px;
+    
+}
+main section.orange button.whiteButton {
+    background-color: white;
+    color: black;
+    flex-wrap: wrap;
+    
+}
+main section.orange {
+    margin-top: 110px;
+}
+footer {
+    display: flex;
+    background-color: rgb(35, 44, 81);
+    color: white;
+    padding: 10px 10px;
+    justify-content: center;
+    flex-direction: column; 
+}
+footer div.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;align-items: center;
+}
+footer div.contact div.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div.contact div.socialContact {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.socialContact i:hover {
+    color: orange;
+    cursor: pointer;
+}
+footer div nav.lists {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;text-decoration: none;
+}
+footer div nav.lists ul{
+    
+    cursor: pointer;
+}
+footer p {
+    text-align: end;
+}
+
+
+#movilmenu {
+    display: none;
+}
+
+
+
+
+@media (max-width:400px) {
+    /* headerStylesMovile */
+
+    #navButton { display: none;} 
+    #destopmenu { display: none;}
+    #movilmenu {display: block;}
+
+    header {
+    justify-content: space-between;
+    padding-left: 20px;        
+    padding-right: 20px;
+    }
+
+    /* mainStyleMovile */
+
+    .centralMain {flex-wrap: wrap;}
+
+    .cardTrack div:first-child { 
+    background-color: rgb(255, 239, 234);
+    border-radius: 30px; }
+
+    h1 { text-align: center;
+    font-size: 3.5rem;}
+
+    .boxes { flex-wrap: wrap;}
+
+    main section.orange button.whiteButton {  display: block;}
+
+    main section.orange div.container p.lastText {font-size: 3rem; }
+
+    p.justify { color: #B9B9C1;
+    text-align: justify; 
+    vw: 70%;
+    }
+
+    .leftAling { padding-left: 10px;
+    text-align: left;}
+
+    .hidenCards { display: none;
+    } 
+    main section.orange {
+    margin-top: 20px;
+    
+    }
+    main section.orange div.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    }
+
+    main section.orange div.container  p {
+    font-size: 30px ;
+    }
+
+    /* footerStylyMovile */
+
+    footer {
+        background-color: rgb(29, 30, 37);
+        
+    }
+    
+    footer div.contact{ 
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap-reverse;        
+    }
+    footer div.contact div.logo {
+        flex-direction: column-reverse;
+        order: 3;
+        margin-top: 25px;
+        height: 180px;
+        width: 90%;
+        justify-content: space-around;
+    }
+    footer div.contact div.logo img {
+        width: 150px;
+    }
+    footer div.contact div.logo div.socialContact i { font-size: 30px;
+        justify-content: space-around;
+    margin-right:15px;}
+
+footer div.contact div.logo div.socialContact {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
+    footer nav.contact form {
+        order: 1;
+        width: 90%;
+    }    
+
+    footer div nav.lists {
+        order: 2;
+        width: 90%;
+    }
+    a  { color: white;}
+
+    button { margin-bottom: 50px;}
+
+    footer p {
+        color: gray;
+        font-size: 
+        0.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
