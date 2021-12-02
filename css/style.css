@@ -3,8 +3,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Be Vietnam Pro', helvetica, sans-serif;  
-    /* border: red 2px solid;  */ 
+    font-family: 'Be Vietnam Pro', helvetica, sans-serif; 
 }
 
 html { font-size: 62.5%;
@@ -18,9 +17,11 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 footer div.contact nav.lists ul a {
     text-decoration: none;
+    color: white;
 }
 li {
     list-style-type: none;
@@ -64,7 +65,7 @@ main section.description {
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    align-items: center;    
+    align-items: center; 
 }
 main section article img.grafics {
     width: 100%;
@@ -77,7 +78,7 @@ main section article img.grafics {
 h1 {
     font-size: 4.8rem;
     font-weight: 700px;
-    
+    color: #232C50; 
 }
 main section.description p {
     padding-top: 30px;   
@@ -90,10 +91,17 @@ main section.centralMain article p {
     padding-bottom: 20px;
 }
 
+h2 {
+    color: #232C50;
+}
+
+h3 { color: #232C50;}
+h5 { color: #232C50;}
 .centralMain {
     display: flex;
     width: 100% ;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
+    margin: 100px 0;    
 }
 .info {
     max-width: 439px;
@@ -132,6 +140,7 @@ h2 {
 }
 main section.containerSlide div{
     display: flex; 
+
 }
 
 main section.containerSlide div article {
@@ -155,7 +164,7 @@ main section.containerSlide div article p {
 main section.orange  div.container{
     display: flex;
     background-color: rgb(242, 95, 58);
-    padding: 30px;
+    padding: 30px 60px;
     justify-content: space-between;align-items: center;
     
 }
@@ -164,7 +173,7 @@ main section div p.lastText {
     font-weight: bold;
     color: white;
     width: 450px;
-    
+        
 }
 main section.orange button.whiteButton {
     background-color: white;
@@ -174,12 +183,13 @@ main section.orange button.whiteButton {
 }
 main section.orange {
     margin-top: 110px;
+    
 }
 footer {
     display: flex;
-    background-color: rgb(35, 44, 81);
+    background-color: rgb(4, 5, 17);
     color: white;
-    padding: 10px 10px;
+    padding: 50px 10px;
     justify-content: center;
     flex-direction: column; 
 }
@@ -198,7 +208,8 @@ footer div.contact div.logo {
 footer div.contact div.socialContact {
     display: flex;
     justify-content: space-evenly;
-    
+    width: 180px;
+    margin-top: 20px;
 }
 .socialContact i:hover {
     color: orange;
@@ -216,8 +227,18 @@ footer div nav.lists ul{
 }
 footer p {
     text-align: end;
+    font-size: 1.3rem;
+    color: #8C8C94;
+    padding-top: 15px;
+    padding-right: 40px;
 }
-
+input[type=email]{ 
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline-color:  #F3603B;
+}
 
 #movilmenu {
     display: none;
@@ -250,6 +271,32 @@ footer p {
     h1 { text-align: center;
     font-size: 3.5rem;}
 
+    .descriptionText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.centralMain article.containerTrack {
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info h2 {
+        font-size: 4rem ;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .info p.center {
+        padding: 20px 15px;
+        text-align: center;
+        
+    }
     .boxes { flex-wrap: wrap;}
 
     main section.orange button.whiteButton {  display: block;}
@@ -258,7 +305,7 @@ footer p {
 
     p.justify { color: #B9B9C1;
     text-align: justify; 
-    vw: 70%;
+    padding: 0 20px;
     }
 
     .leftAling { padding-left: 10px;
@@ -278,15 +325,15 @@ footer p {
     }
 
     main section.orange div.container  p {
-    font-size: 30px ;
+    width: 100%;
+    padding: 20px;
+    }
+    main section.orange div.container button.whiteButton {
+        margin-top: 30px;
     }
 
     /* footerStylyMovile */
 
-    footer {
-        background-color: rgb(29, 30, 37);
-        
-    }
     
     footer div.contact{ 
         display: flex;
@@ -317,14 +364,16 @@ footer div.contact div.logo div.socialContact {
     footer nav.contact form {
         order: 1;
         width: 90%;
-    }    
+    }
 
+    input[type=email]{
+        width: 220px;
+    }
     footer div nav.lists {
         order: 2;
         width: 90%;
     }
-    a  { color: white;}
-
+    
     button { margin-bottom: 50px;}
 
     footer p {
@@ -333,4 +382,5 @@ footer div.contact div.logo div.socialContact {
         0.8rem;
         text-align: center;
         margin-bottom: 20px;
-    }
+    } 
+}
